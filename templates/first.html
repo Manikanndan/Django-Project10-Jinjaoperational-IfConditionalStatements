@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Simple if Condition</h1>
+        {% if a > 50 %}
+            <h2>a is greater</h2>
+        {% endif %}
+
+        <h1>Simple if else condition</h1>
+        {% if a > b %}
+            <h2>a is greater than b</h2>
+        {% else %}
+            <h2>b is greater than a</h2>
+        {% endif %}
+
+        <h1>Simple if elif condition</h1>
+        {% if a > b and a > c %}
+            <h2>a is greater than a,b</h2>
+        {% elif b > c %}
+            <h2>b is greater than b,c</h2>
+        {% else %}
+            <h2>c is greater b,a</h2>
+        {% endif %}
+
+        <h1>Nested if Condition</h1>
+        {% if a > b %}
+            {% if a > c %}
+                <h2>a is greater</h2>
+            {% else %}
+                <h2>c is greater</h2>
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+                <h2>b is greater</h2>
+            {% else  %}
+                <h2>c is greater</h2>
+            {% endif %}
+        {% endif %}
+    </center>
+</body>
+</html>
